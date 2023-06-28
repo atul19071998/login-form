@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+     <!-- login section start  -->
+
+      <div class="login-container">
+        <div class="login-wrapper">
+            <div class="left-container">
+               <div class="left-wrapper">
+                <h1>Login</h1>
+               
+                <div class="icons-wrapper">
+                    <div class="left-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="right-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                </div>
+                <p>Or use ur Account </p>
+              <form onsubmit="return myfun()">
+                <input type="email" id="email" placeholder="Email">
+                <span id="showmessage"></span>
+                <input type="password" id="password" placeholder="Password">
+                <span id="showpwd"></span>
+                <p>Forgot your Password ?</p>
+                <button onclick="submit()">LOG IN </button>  
+              </form>
+            </div>
+
+            </div>
+            <div class="right-container">
+                <h1>HTML CSS Login Form</h1>
+
+                <p>the login form is created using pure HTML and CSS . for social icons we use font awesome icons</p>
+            </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+
+
+     function myfun(){
+     
+      var email = document.getElementById('email').value;
+  
+     var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+
+      if(pattern.test(email)){
+        document.getElementById('showmessage').innerHTML = " Email id is correct "
+      }else{
+        document.getElementById('showmessage').innerHTML = "Sorry, Please enter a valid email id "
+      }
+      var password= document.getElementById('password').value;
+      var patterns = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/
+      if(patterns.test(password)){
+      document.getElementById('showpwd').innerHTML = "Password is right"
+     }else{
+        document.getElementById('showpwd').innerHTML = "Invalid password"
+      }
+     }
+    
+     
+// function myfunc(){
+//   event.preventDefault();
+ 
+// }
+// let form = document.getElementById('form');
+// form.addEventListener("submit", function(e) {
+//   e.preventDefault();
+//   let email = document.getElementById('email').value;
+//      let password = document.getElementById('password').value;
+     
+
+//      console.log(email);
+//      console.log(password);
+  
+// })
+    
+      </script>
+       
+</body>
+</html>
+
+
+

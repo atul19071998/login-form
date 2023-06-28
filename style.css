@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:1px solid grey; */
+}
+
+.login-container{
+    width:100%;
+    height:100vh;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+    /* border:2px solid blue; */
+    border-top-left-radius: 25%;
+}
+
+.login-wrapper{
+    width:70%;
+    height:80%;
+    display:flex;
+  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+}
+.left-container{
+    width:50%;
+    height:100%;
+   
+     
+    background-color: whitesmoke;
+}
+  .icons-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ padding: 1rem;
+  width:100%;
+   
+ 
+
+}
+ 
+.left-wrapper ,h1{
+    text-align: center;
+    padding: 1rem;;
+}
+.right-container{
+    width:50%;
+    height:100%;
+    /* border:1px solid black; */
+    background-color: #FF435D;
+}
+
+.left-wrapper input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-color: transparent;
+    height:100%;
+    margin-left:15px;
+    width:90%;
+    margin:1rem;
+    text-decoration: none;
+    background-color: rgb(240, 235, 235);
+    
+}
+.left-wrapper p{
+    margin-top:3rem;
+}
+ 
+button{
+    width:30%;
+    height: 2.5rem;
+    background-color: #FF4B2B;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.right-container h1{
+    color:white;
+    margin-top: 8rem;
+}
+
+.right-container p{
+    color: white;
+    /* margin-top: 1rem; */
+    padding: 3rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    border-radius: 25%;
+}
+.fa-twitter{
+    margin-left: 1rem;
+}
+
+#showmessage{
+    color:red;
+}
